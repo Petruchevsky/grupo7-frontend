@@ -1,0 +1,453 @@
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--black);
+}
+
+.section-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	padding: 3rem 0 1rem 0;
+}
+
+.logo-footer {
+	width: 18rem;
+	height: auto;
+	transition: all 200ms ease-in-out;
+}
+
+.logo-footer:hover {
+	transform: scale(1.05);
+}
+
+.enlaces {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.enlaces-h3, .enlaces-h3 > h3 {
+	font-size: 3rem;
+	color: var(--white);
+	font-weight: 200;
+	transition: all 200ms ease-in-out;
+	text-decoration: none;
+}
+
+.link-footer, .link-footer > p {
+	font-size: 2.4rem;
+	color: var(--white);
+	font-weight: 200;
+	transition: all 200ms ease-in-out;
+	text-decoration: none;
+}
+
+.link-footer:hover, .link-footer > p:hover, .enlaces-h3:hover, .enlaces-h3 > h3:hover {
+	color: var(--yellow);
+	transform: scale(1.07);
+}
+
+.datos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	align-items: center;
+	padding: 0;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.datos > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 3.5rem;
+}
+
+.RRSS-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	transition: all 300ms;
+	gap: 2rem;
+}
+
+.icon-f {
+	transition: all 300ms;
+	filter: grayscale(80%) brightness(1.7);
+	padding: 0;
+	margin: 0;
+	width: 70px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.icon-i {
+	transition: all 300ms;
+	filter: grayscale(80%) brightness(1.7);
+	margin: 0;
+	width: 70px;
+	height: auto;
+}
+
+.icon-f:hover,
+.icon-i:hover {
+	transform: scale(1.1);
+	filter: grayscale(0);
+	cursor: pointer;
+}
+
+.developedBy {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: rgb(50, 50, 50);
+	padding: 0.7rem 17rem;
+}
+
+.developedBy a {
+	font-size: 1.8rem;
+	color: var(--white);
+	transition: all 300ms;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+.developedBy a:hover {
+	color: var(--yellow);
+	transform: scale(1.03);
+}
+
+.up-btn-div {
+	position: absolute;
+	top: 400;
+	right: 10;
+	width: 3rem;
+	height: 3rem;
+	display: sticky;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--black);
+	color: var(--white);
+	font-size: 2rem;
+	cursor: pointer;
+	background-color: black;
+	border-radius: 50px;
+	padding: 1.5rem;
+}
+
+.up-btn {
+	font-size: 2.4rem;
+	font-weight: 400;
+	padding: 1rem;
+	border-radius: 50px;
+	border: solid 2px white;
+	color: var(--white);
+	transition: all 200ms;
+	width: 6rem;
+	height: auto;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	background: black;
+} 
+
+.up-btn:hover {
+	font-size: 2.4rem;
+	font-weight: 400;
+	padding: 1rem;
+	border-radius: 50px;
+	border: solid 2px white;
+	color: var(--white);
+	transition: all 200ms;
+	width: 6rem;
+	height: auto;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	background: var(--blue);
+} 
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.section-footer {
+		padding: 2rem 0 1rem 0;
+	}
+	
+	.logo-footer {
+		width: 11rem;
+	}
+	
+	.enlaces {
+		gap: 2rem;
+	}
+	
+	.enlaces-h3, .enlaces-h3 > h3 {
+		font-size: 2.3rem;
+	}
+	
+	.datos {
+		line-height: 3rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.datos > div {
+		line-height: 2.5rem;
+	}
+
+	.link-footer, .link-footer > p {
+		font-size: 2rem;
+		width: 30rem;
+	}
+	
+	.link-footer:hover, .link-footer > p:hover, .enlaces-h3:hover, .enlaces-h3 > h3:hover {
+		color: var(--yellow);
+		transform: scale(1.07);
+	}
+	
+	
+	.RRSS-container {
+		transition: all 300ms;
+		gap: 1rem;
+	}
+	
+	.icon-f {
+		width: 60px;
+		border-radius: 15px;
+	}
+	
+	.icon-i {
+		width: 60px;
+	}
+	
+	.developedBy a {
+		font-size: 1.2rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.section-footer {
+		padding: 2rem 0 .5rem 0;
+	}
+	
+	.logo-footer {
+		width: 9rem;
+	}
+	
+	.enlaces {
+		gap: 1.5rem;
+	}
+	
+	.enlaces-h3, .enlaces-h3 > h3 {
+		font-size: 2rem;
+	}
+	
+	.datos {
+		line-height: 3rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.datos > div {
+		line-height: 2.5rem;
+	}
+
+	.link-footer, .link-footer > p {
+		font-size: 1.7rem;
+		width: 30rem;
+	}
+	
+	.link-footer:hover, .link-footer > p:hover, .enlaces-h3:hover, .enlaces-h3 > h3:hover {
+		color: var(--yellow);
+		transform: scale(1.07);
+	}
+	
+	
+	.RRSS-container {
+		transition: all 300ms;
+		gap: 1rem;
+	}
+	
+	.icon-f {
+		width: 50px;
+		border-radius: 15px;
+	}
+	
+	.icon-i {
+		width: 50px;
+	}
+	
+	.developedBy a {
+		font-size: 1rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.section-footer {
+		padding: 2rem 0 .5rem 0;
+	}
+	
+	.logo-footer {
+		width: 7rem;
+	}
+	
+	.enlaces {
+		gap: 1.5rem;
+	}
+	
+	.enlaces-h3, .enlaces-h3 > h3 {
+		font-size: 1.7rem;
+	}
+	
+	.datos {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.datos > div {
+		line-height: 2rem;
+	}
+
+	.link-footer, .link-footer > p {
+		font-size: 1.6rem;
+		width: 20rem;
+	}
+	
+	.link-footer:hover, .link-footer > p:hover, .enlaces-h3:hover, .enlaces-h3 > h3:hover {
+		color: var(--yellow);
+		transform: scale(1.07);
+	}
+	
+	
+	.RRSS-container {
+		transition: all 300ms;
+		gap: 1rem;
+	}
+	
+	.icon-f {
+		width: 45px;
+		border-radius: 15px;
+	}
+	
+	.icon-i {
+		width: 45px;
+	}
+	
+	.developedBy {
+		padding: 0.7rem 7rem;
+	}
+
+	.developedBy a {
+		font-size: .9rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.section-footer {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		width: 90%;
+		margin: 0 auto;
+		padding: 1.5rem 0;
+	}
+
+	.logo-footer {
+		width: 7rem;
+	}
+
+	.tiulo-footer {
+		font-weight: 700;
+		font-size: 1.8rem;
+	}
+
+	.tiulo-footer:hover {
+		font-weight: 700;
+		font-size: 1.8rem;
+		color: var(--blue);
+	}
+	
+	.enlaces {
+		gap: .5rem;
+	}
+	
+	.enlaces-h3, .enlaces-h3 > h3 {
+		font-size: 1.7rem;
+	}
+
+	.datos {
+		gap: 1rem;
+		width: 100%;
+	}
+
+	.datos > div {
+		line-height: 2rem;
+		width: 100%;
+	}
+
+	.link-footer {
+		font-size: 1.6rem;
+		color: var(--white);
+		transition: all 300ms;
+		text-decoration: none;
+		font-weight: 200;
+		width: 80%;
+	}
+
+	.RRSS-container {
+		gap: 1rem;
+	}
+
+	.icon-f {
+		width: 36px;
+		border-radius: 10px;
+	}
+
+	.icon-i {
+		width: 36px;
+	}
+
+	.developedBy {
+		padding: .5rem 1rem;
+	}
+
+	.developedBy a {
+		font-size: 8px;
+	}
+
+}

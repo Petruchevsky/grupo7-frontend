@@ -1,0 +1,199 @@
+.section-social {
+	background-image: url("/img/social.jpg");
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 10rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+.article-social {
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 40%;
+	padding: 12rem;
+	border-radius: 20px;
+	border: solid 2px var(--blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2rem;
+	text-align: left;
+}
+
+.pri {
+	font-size: 6rem;
+	color: lightgreen;
+}
+
+.sec {
+	font-size: 5rem;
+	color: white;
+}
+
+.ter {
+	font-size: 4rem;
+	color: rgb(201, 201, 201);
+}
+
+.cua {
+	font-size: 3rem;
+	color: rgb(140, 140, 140);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.section-social {
+		padding: 10rem;
+	}
+
+	.article-social {
+		width: 50%;
+		padding: 4rem;
+	}
+
+	.pri {
+		font-size: 5rem;
+	}
+
+	.sec {
+		font-size: 4rem;
+	}
+
+	.ter {
+		font-size: 3rem;
+	}
+
+	.cua {
+		font-size: 2rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.article-social {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.section-social {
+		padding: 9rem;
+	}
+
+	.article-social {
+		width: 70%;
+		padding: 4rem;
+	}
+
+	.pri {
+		font-size: 5rem;
+		color: lightskyblue;
+	}
+
+	.sec {
+		font-size: 4rem;
+	}
+
+	.ter {
+		font-size: 3rem;
+	}
+
+	.cua {
+		font-size: 2rem;
+
+		color: yellow;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.article-social {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.section-social {
+		padding: 13rem 5rem;
+		gap: 1rem;
+	}
+
+	.article-social {
+		width: 85%;
+		padding: 4rem;
+		margin: 0 auto;
+	}
+
+	.pri {
+		font-size: 4rem;
+		color: lightskyblue;
+	}
+
+	.sec {
+		font-size: 3rem;
+	}
+
+	.ter {
+		font-size: 2.5rem;
+
+		color: greenyellow;
+	}
+
+	.cua {
+		font-size: 2rem;
+
+		color: yellow;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.section-social {
+		padding: 0rem 0rem;
+	}
+
+	.article-social {
+		width: 100%;
+		align-items: center;
+		height: auto;
+		padding: 20rem 1rem;
+		margin: 0;
+		border: none;
+		border-radius: 0%;
+		backdrop-filter: blur(0px);
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.pri {
+		font-size: 3rem;
+		color: lightskyblue;
+	}
+
+	.sec {
+		font-size: 2.5rem;
+	}
+
+	.ter {
+		font-size: 2rem;
+		color: rgb(201, 255, 120);
+	}
+
+	.cua {
+		font-size: 1.5rem;
+		color: rgb(255, 255, 143);
+	}
+
+	.m0 {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,172 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.not-found-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem 0 10rem 0;
+  background-color: black;
+}
+
+.central-section-404 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.h1-error-404 {
+  color: rgb(255, 0, 0);
+  font-size: 5.5rem;
+  padding: 0;
+  text-shadow: 0 0 30px rgb(255, 0, 0);
+  margin: 0 0 0 5rem;
+}
+
+.h1-text {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  padding: 2rem;
+  text-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+.spinner-404 {
+  width: 6rem;
+  height:6rem;
+  color: rgb(255, 0, 0);
+}
+
+.img-404 {
+  width: 55rem;
+	height: auto;
+  padding: 0 3rem;
+  margin: 0;
+	border-radius: 50%;
+	margin: 0;
+  box-shadow: 0 0 420px rgb(111, 255, 0);
+  animation: shadowColor404 2000ms linear infinite;
+}
+
+@keyframes shadowColor404 {
+  0% { box-shadow: 0 0 420px red; }
+  25% { box-shadow: 0 0 220px yellow; }
+  50% { box-shadow: 0 0 420px red; }
+  75% { box-shadow: 0 0 220px yellow; }
+  100% { box-shadow: 0 0 420px red; }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+  .h1-error-404 {
+    line-height: 0;
+    font-size: 4.5rem;
+  }
+  
+  .h1-text {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0 2rem 0;
+  }
+  
+  .spinner-404 {
+    width: 5rem;
+    height:5rem;
+  }
+  
+  .img-404 {
+    padding: 0 2rem;
+    width: 35rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .not-found-container {
+    padding: 3rem 0;
+  }
+  .h1-error-404 {
+    line-height: 0;
+    font-size: 3.5rem;
+  }
+  
+  .h1-text {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .spinner-404 {
+    width: 4rem;
+    height:4rem;
+  }
+  
+  .img-404 {
+    padding: 0 2rem;
+    width: 35rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .not-found-container {
+    padding: 3rem 0;
+  }
+  .h1-error-404 {
+    line-height: 0;
+    font-size: 3rem;
+  }
+  
+  .h1-text {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .spinner-404 {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .img-404 {
+    padding: 0 2rem;
+    width: 30rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.not-found-container {
+    padding: 3rem 0;
+  }
+
+  .h1-error-404 {
+    line-height: 0;
+    font-size: 2.5rem;
+  }
+  
+  .h1-text {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .spinner-404 {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .img-404 {
+    padding: 0 1rem;
+    width: 20rem;
+  }
+}

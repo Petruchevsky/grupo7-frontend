@@ -1,0 +1,97 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+
+.nosotros-container {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 5rem;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.nosotros-img-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5rem 0;
+}
+
+.nosotros-img {
+	border-radius: 10px;
+	width: 500px;
+	height: auto;
+	box-shadow: 0 0 20px var(--blue);
+}
+
+.btn-div-nos {
+	width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.nosotros-img-container {
+		padding: 3rem 0;
+	}
+	
+	.nosotros-img {
+		width: 330px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.nosotros-img-container {
+		padding: 3rem 0;
+	}
+	
+	.nosotros-img {
+		width: 250px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.nosotros-container {
+		width: 90%;
+	}
+	.nosotros-img-container {
+		padding: 2rem 0;
+	}
+	
+	.nosotros-img {
+		width: 200px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	
+	.nosotros-container {
+		width: 95%;
+		padding-bottom: 2rem;
+	}
+
+	.nosotros-img-container {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		padding: 2rem 0;
+		gap: 2rem;
+		width: 100%;
+	}
+
+	.nosotros-img {
+		border-radius: 10px;
+		width: 100%;
+	}
+}
+

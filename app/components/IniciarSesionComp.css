@@ -1,0 +1,90 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.main-container-login {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background-image: linear-gradient(to bottom, white 70%, rgb(71, 140, 219) 85%);
+   margin: 0;
+   padding: 0;
+}
+
+.titleDiv-login {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding-right: 3rem;
+}
+
+.logo-login {
+   width: 15rem;
+   height: auto;
+}
+
+.divForm-login {
+   width: 35%;
+   margin: 0 auto;
+	padding: 0;
+   margin-bottom: 5rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+   .logo-login {
+      width: 10rem;
+   }
+   
+   .divForm-login {
+      width: 40%;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.logo-login {
+      width: 10rem;
+   }
+   
+   .divForm-login {
+      width: 50%;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.logo-login {
+      width: 10rem;
+   }
+   
+   .divForm-login {
+      width: 70%;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.titleDiv-login {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-right: 2rem;
+      gap: 0;
+   }
+
+   .logo-login {
+      width: 5rem;
+      padding: 0;
+   }
+   
+   .divForm-login {
+      width: 95%;
+   }
+}

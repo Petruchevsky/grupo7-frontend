@@ -1,0 +1,81 @@
+.navbar {
+	width: 80%;
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 10rem;
+	margin: 0 auto;
+}
+
+.navbar > div {
+	width: 30rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.navbar {
+		width: 85%;
+		gap: 1rem;
+		padding-bottom: 7rem;
+	}
+
+	.navbar > div {
+		width: 19rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.navbar {
+		width: 90%;
+		gap: 1rem;
+		padding-bottom: 7rem;
+
+	}
+
+	.navbar > div {
+		width: 32%;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.navbar {
+		width: 90%;
+		gap: .5rem;
+		padding: 0;
+		padding-bottom: 5rem;
+
+	}
+
+	.navbar > div {
+		width: 32.5%;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+
+	.navbar {
+		width: 97%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: .5rem;
+		padding: 0rem;
+		padding-bottom: 3rem;
+	}
+
+	.navbar > div {
+		width: 100%;
+	}
+}

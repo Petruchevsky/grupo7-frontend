@@ -1,0 +1,194 @@
+/* Estilos para Pantallas 4k */
+.main-container-contact {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 5rem;
+	padding-bottom: 7rem;
+}
+
+.form-container {
+	width: 30%;
+}
+
+.datos-container-contacto {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.title-logo-div {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 5rem;
+}
+
+.logo-contacto {
+	width: 15rem;
+	height: auto;
+}
+
+.section-datos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem 3rem 3rem 3rem;
+	text-align: center;
+	width: 100%;
+	background-color: white;
+	border-radius: 15px;
+	border: solid 2px var(--blue);
+	box-shadow: 0 0 30px var(--blue);
+}
+
+.section-datos > a {
+	color: var(--blue);
+}
+
+.svg-contacto {
+	color: var(--blue);
+	font-size: 3rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.svg-contacto:hover {
+	color: var(--lightgreen);
+	transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.main-container-contact {
+		gap: 3rem;
+		padding-bottom: 5rem;
+	}
+	
+	.form-container {
+		width: 35%;
+	}
+	
+	.datos-container-contacto {
+		display: flex;
+		flex-direction: column;
+		width: 35%;
+	}
+	
+	.title-logo-div {
+		padding-right: 3rem;
+	}
+	
+	.logo-contacto {
+		width: 10rem;
+	}
+	
+	.section-datos {
+		padding: 4rem 3rem 2.5rem 3rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.main-container-contact {
+		gap: 3rem;
+		padding-bottom: 5rem;
+	}
+	
+	.form-container {
+		width: 50%;
+	}
+	
+	.datos-container-contacto {
+		display: flex;
+		flex-direction: column;
+		width: 35%;
+	}
+	
+	.title-logo-div {
+		padding-right: 3rem;
+	}
+	
+	.logo-contacto {
+		width: 10rem;
+	}
+	
+	.section-datos {
+		padding: 4rem 3rem 2.5rem 3rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.main-container-contact {
+		gap: 1rem;
+		padding-bottom: 3rem;
+	}
+	
+	.form-container {
+		width: 50%;
+	}
+	
+	.datos-container-contacto {
+		display: flex;
+		flex-direction: column;
+		width: 35%;
+	}
+	
+	.title-logo-div {
+		padding-right: 3rem;
+	}
+	
+	.logo-contacto {
+		width: 7rem;
+	}
+	
+	.section-datos {
+		padding: 4rem 3rem 2.5rem 3rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.main-container-contact {
+		gap: 1rem;
+		padding-bottom: 2rem;
+		flex-direction: column;
+	}
+	
+	.form-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	.datos-container-contacto {
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	.title-logo-div {
+		padding-right: 3rem;
+	}
+	
+	.logo-contacto {
+		width: 7rem;
+	}
+	
+	.section-datos {
+		padding: 4rem 3rem 2.5rem 3rem;
+	}
+}

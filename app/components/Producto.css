@@ -1,0 +1,116 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.card-prod {
+  background-color: white;
+  width: 400px;
+  height: 615px;
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+	border-radius: 20px;
+  border: none;
+	text-align: center;
+	padding: 2rem 1rem 3rem 1rem;
+	margin-bottom: 2rem;
+  box-shadow: 0 0 25px var(--blue);
+  position: relative;
+}
+
+.img-prod {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: auto;
+}
+
+.card-prod-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.btn-prod-div {
+  width: 90%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+  .card-prod {
+    width: 300px;
+    height: 425px;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.card-prod {
+    width: 270px;
+    height: 420px;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .card-prod {
+    width: 240px;
+    height: 375px;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	
+  .card-prod {
+    min-width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: left;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+ }
+
+ .card-prod-text {
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 2rem;
+ }
+
+ .img-prod {
+   margin: 2rem;
+   width: 50%;
+ }
+
+ .btn-prod-div {
+    width: 100%;
+    
+ }
+
+}
+
+
+
+
+
+

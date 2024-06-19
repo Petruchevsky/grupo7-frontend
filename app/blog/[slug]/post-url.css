@@ -1,0 +1,134 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.post-url-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 5rem;
+}
+
+.post-url-article {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 7rem 30rem;
+	background-color: white;
+	box-shadow: 0 0 30px var(--blue);
+	margin-bottom: 5rem;
+}
+
+.post-url-img-div {
+	width: 35%;
+	height: auto;
+}
+
+.post-url-text-div {
+	width: 50%;
+	margin: 0;
+}
+
+.post-url-img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 30px var(--blue);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.post-url-container {
+		padding-top: 5rem;
+	}
+
+	.post-url-article {
+		padding: 7rem 5rem 4rem 5rem;
+		align-items: flex-start;
+	}
+
+	.post-url-img-div {
+		width: 40%;
+	}
+
+	.post-url-text-div {
+		width: 50%;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.post-url-container {
+		padding-top: 5rem;
+	}
+
+	.post-url-article {
+		padding: 5rem 5rem 2rem 5rem;
+		display: block;
+	}
+
+	.post-url-img-div {
+		width: 40%;
+		float: left;
+		margin-right: 4rem;
+	}
+
+	.post-url-text-div {
+		width: 100%;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.post-url-container {
+		padding-top: 5rem;
+	}
+
+	.post-url-article {
+		padding: 5rem 5rem 2rem 5rem;
+		display: block;
+	}
+
+	.post-url-img-div {
+		width: 50%;
+		float: left;
+		margin-right: 3rem;
+	}
+
+	.post-url-text-div {
+		width: 100%;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.post-url-container {
+		padding-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.post-url-article {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.post-url-img-div {
+		width: 100%;
+      margin-bottom: 2rem;
+	}
+
+   .post-url-img {
+      border-radius: 0;
+   }
+
+	.post-url-text-div {
+		width: 90%;
+      margin: 0 auto;
+	}
+}

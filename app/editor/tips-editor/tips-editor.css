@@ -1,0 +1,254 @@
+/* ESTILOS PANTALLAS 4k */
+/*___________________________________________*/
+.tips-cont-editor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+
+.tip-div {
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+	width: 22%;
+	height: 820px;
+	box-shadow: 0 0 20px 10px var(--white);
+  border-radius: 0;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.tip-img {
+  width: 100%;
+  min-height: 400px;
+	border: none;
+	border-radius: 0;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.tip-text-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 2rem 0 2rem;
+	width: 100%;
+	background-color: var(--white);
+}
+
+.tip-text-div > h1 {
+  text-align: center;
+}
+
+.buttons-div-tips-editor {
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+  .tips-cont-editor {
+    gap: 5rem;
+    padding-top: 0rem;
+  }
+  
+  .tip-div {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 26%;
+    box-shadow: 0 0 20px 10px var(--white);
+    border-radius: 0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tip-img {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tip-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0 2rem;
+    width: 100%;
+    background-color: var(--white);
+  }
+  
+  .tip-text-div > h1 {
+    text-align: center;
+  }
+  
+  .buttons-div-tips-editor {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .tips-cont-editor {
+    gap: 5rem;
+    padding-top: 0rem;
+  }
+  
+  .tip-div {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+    box-shadow: 0 0 20px 5px var(--white);
+    border-radius: 0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tip-img {
+    padding: 1rem;
+    min-height: 270px;
+  }
+  
+  .tip-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0 2rem;
+    width: 100%;
+    background-color: var(--white);
+  }
+  
+  .tip-text-div > h1 {
+    text-align: center;
+  }
+  
+  .buttons-div-tips-editor {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .tips-cont-editor {
+    gap: 5rem;
+    padding-top: 0rem;
+  }
+  
+  .tip-div {
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    box-shadow: 0 0 20px 5px var(--white);
+    border-radius: 0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tip-img {
+    padding: 1rem;
+    min-height: 270px;
+  }
+  
+  .tip-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0 2rem;
+    width: 100%;
+    background-color: var(--white);
+  }
+  
+  .tip-text-div > h1 {
+    text-align: center;
+  }
+  
+  .buttons-div-tips-editor {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.tips-cont-editor {
+    gap: 2rem;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .tip-div {
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 20px 5px var(--white);
+    border-radius: 0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tip-img {
+    padding: 1rem;
+    min-height: 350px;
+  }
+  
+  .tip-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0 2rem;
+    width: 100%;
+    background-color: var(--white);
+  }
+  
+  .tip-text-div > h1 {
+    text-align: center;
+  }
+  
+  .buttons-div-tips-editor {
+    gap: .5rem;
+    padding: 1rem;
+  }
+}

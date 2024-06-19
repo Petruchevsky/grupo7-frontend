@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+
+.tips-container {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   margin: 0 auto;
+}
+
+.posts-container {
+   display: flex;
+   flex-direction: column;
+   gap: 6rem;
+   padding: 5rem 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.blog-container {
+      width: 90%;
+   }
+   
+   .articles-container {
+      gap: 5rem;
+      padding: 5rem 0;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.blog-container {
+      width: 90%;
+   }
+
+   .articles-container {
+      gap: 5rem;
+      padding: 5rem 0;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.blog-container {
+      width: 90%;
+   }
+
+   .articles-container {
+      gap: 5rem;
+      padding: 5rem 0;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.blog-container {
+      width: 95%;
+   }
+
+   .articles-container {
+      gap: 1rem;
+      padding: 2rem 0;
+   }
+}

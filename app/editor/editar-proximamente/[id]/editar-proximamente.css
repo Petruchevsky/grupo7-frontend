@@ -1,0 +1,83 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.img-preview-cont-add-editor {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(236, 247, 254);
+	height: auto;
+	gap: 2rem;
+	padding: 5rem 2rem 1rem 2rem;
+	border-radius: 15px;
+	width: 60%;
+  margin-bottom: 5rem;
+}
+
+.img-preview-add-editor {
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 300px;
+  height: auto;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+  .img-preview-cont-add-editor {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+
+  .img-preview-add-editor {
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .img-preview-cont-add-editor {
+    padding: 4rem 2rem 1rem 2rem;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .img-preview-add-editor {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .img-preview-cont-add-editor {
+    padding: 4rem 2rem 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .img-preview-add-editor {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+  .img-preview-cont-add-editor {
+    padding: 2rem 1rem 0rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .img-preview-add-editor {
+    width: 100%;
+    height: auto;
+  }
+}

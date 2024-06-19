@@ -1,0 +1,90 @@
+.home-banner {
+    width: 70%;
+    height: auto;
+    padding: 10rem 0;
+    margin: 0 auto;
+}
+
+.banner-img {
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 40px var(--blue);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.home-banner {
+        width: 70%;
+        height: auto;
+        padding: 7rem 0;
+        margin: 0 auto;
+    }
+    
+    .banner-img {
+        border-radius: 20px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 40px var(--blue);
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .home-banner {
+        width: 90%;
+        height: auto;
+        padding: 5rem 0;
+        margin: 0 auto;
+    }
+    
+    .banner-img {
+        border-radius: 20px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 20px var(--blue);
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.home-banner {
+        width: 95%;
+        height: auto;
+        padding: 4rem 0;
+        margin: 0 auto;
+    }
+    
+    .banner-img {
+        border-radius: 20px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 20px var(--blue);
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+    .home-banner {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+    
+    .banner-img {
+        border-radius: 0px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 40px var(--blue);
+    }
+}

@@ -1,0 +1,128 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.post-container {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+	box-shadow: 0 0 30px var(--blue);
+	background-color: white;
+	border: none;
+}
+
+.text-post-container {
+	width: 62%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0 5rem;
+}
+
+.img-div-post {
+	width: 38%;
+}
+
+.img-post {
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+	border-radius: 10px 0 0 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.text-post-container {
+		width: 70%;
+		padding: 0rem 3rem;
+	}
+	
+	.img-div-post {
+		width: 30%;
+	}
+	
+	.img-post {
+		width: 100%;
+		min-height: 350px;
+
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.post-container {
+		height: auto;
+		min-height: 380px;
+	}
+	
+	.text-post-container {
+		width: 60%;
+		padding: 0rem 3rem;
+	}
+	
+	.img-div-post {
+		width: 40%;
+		padding: 0 0 0 3rem;
+	}
+	
+	.img-post {
+		width: 100%;
+		min-height: 310px;
+		border-radius: 10px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.post-container {
+		height: auto;
+		min-height: 350px;
+	}
+	
+	.text-post-container {
+		width: 55%;
+		padding: 0rem 3rem;
+	}
+	
+	.img-div-post {
+		width: 45%;
+		padding: 0 0 0 3rem;
+	}
+	
+	.img-post {
+		width: 100%;
+		min-height: 250px;
+		border-radius: 10px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.post-container {
+		width: 100%;
+		flex-direction: column;
+		height: auto;
+		min-height: 350px;
+	}
+	
+	.text-post-container {
+		width: 100%;
+		padding: 1.5rem;
+	}
+	
+	.img-div-post {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.img-post {
+		width: 100%;
+		min-height: 250px;
+		border-radius: 10px 10px 0 0;
+	}
+}

@@ -1,0 +1,214 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.checkbox-cont {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  border: solid 2px var(--blue);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox-cont:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 10px var(--blue);
+}
+
+.checkbox-label {
+  width: auto;
+}
+
+.checkbox-label:hover {
+  cursor: pointer;
+}
+
+.green-checkbox {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.red-checkbox {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.img-preview-cont-add-editor {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(236, 247, 254);
+	height: auto;
+	gap: 2rem;
+	padding: 5rem 2rem 1rem 2rem;
+	border-radius: 15px;
+	width: 60%;
+  margin-bottom: 5rem;
+}
+
+.img-preview-add-editor {
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 300px;
+  height: auto;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.central-section {
+    width: 60%;
+    text-align: center;
+  }
+
+  .green-checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .red-checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .checkbox-cont {
+    margin-bottom: 3rem;
+  }
+
+  .img-preview-cont-add-editor {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+
+  .img-preview-add-editor {
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.main-add-prod {
+    padding: 2rem;
+  }
+  
+  .central-section {
+    width: 80%;
+    text-align: center;
+  }
+
+  .green-checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .red-checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .checkbox-cont {
+    margin-bottom: 3rem;
+  }
+
+  .img-preview-cont-add-editor {
+    padding: 4rem 2rem 1rem 2rem;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .img-preview-add-editor {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.main-add-prod {
+    padding: 2rem;
+  }
+  
+  .central-section {
+    width: 80%;
+    text-align: center;
+  }
+
+  .green-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .red-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .checkbox-cont {
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+  }
+
+  .img-preview-cont-add-editor {
+    padding: 4rem 2rem 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .img-preview-add-editor {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.main-add-prod {
+    padding: 0rem;
+  }
+  
+  .central-section {
+    width: 102%;
+    text-align: center;
+  }
+
+  .green-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .red-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .checkbox-cont {
+    margin-bottom: 2rem;
+    padding: .9rem 1rem;
+    border-radius: 5px;
+  }
+
+  .img-preview-cont-add-editor {
+    padding: 2rem 1rem 0rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .img-preview-add-editor {
+    width: 100%;
+    height: auto;
+  }
+}

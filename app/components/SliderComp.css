@@ -1,0 +1,147 @@
+.carousel-container {
+    padding: 0; 
+    width: 70%;
+    height: auto;
+    aspect-ratio: 2.4/1;
+    margin-bottom: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 5px var(--blue);
+}
+
+.border-c {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2.4/1;
+}
+
+.media-carousel {
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2.4/1;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.carousel-container {
+        padding: 0; 
+        width: 70%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+        margin-bottom: 7rem;
+        border-radius: 10px;
+        box-shadow: 0 0 40px var(--blue);
+    }
+    
+    .border-c {
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+    }
+    
+    .media-carousel {
+        border-radius: 10px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.carousel-container {
+        padding: 0; 
+        width: 80%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+        margin-bottom: 5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 40px 5px var(--blue);
+    }
+    
+    .border-c {
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+    }
+    
+    .media-carousel {
+        border-radius: 10px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+    .carousel-container {
+        padding: 0; 
+        width: 85%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+        margin-bottom: 4rem;
+        border-radius: 10px;
+        box-shadow: 0 0 30px 3px var(--blue);
+        background: none;
+        background-color: transparent;
+    }
+    
+    .border-c {
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+    }
+    
+    .media-carousel {
+        border-radius: 10px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+    .carousel-container {
+        padding: 0; 
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+        border-radius: 0px;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 15px 1px var(--blue);
+        background: none;
+        border: none;
+    }
+    
+    .border-c {
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+        background: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+    }
+    
+    .media-carousel {
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.4/1;
+    }
+}
+
+
+
+

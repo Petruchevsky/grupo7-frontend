@@ -1,0 +1,250 @@
+
+.section-slider-edit {
+  background-image: url("/img/bubbles-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-slider-edit {
+  backdrop-filter: blur(10px);
+  background-color: rgba(250, 249, 249, 0.5);
+  width: 80%;
+  padding: 5rem 3rem;
+  border-radius: 20px;
+  border: solid 2px var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.file-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.file-preview-img {
+  border-radius: 20px;
+  padding: 1rem;
+  height: 200px;
+  width: auto;
+  flex-shrink: 1;
+  background-color: white;
+}
+
+.file-preview > p {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: solid 2px var(--blue);
+  color: var(--blue);
+  margin: 0 0 2rem 0;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  border-top: solid 2px var(--blue);
+  border-bottom: solid 2px var(--blue);
+  padding: 2rem;
+  margin: 4rem 0;
+}
+
+.file-list > p {
+  color: var(--darkblue);
+  padding: 1rem 2rem;
+  border-left: solid 2px var(--blue);
+  /* border-right: solid 2px var(--blue); */
+  text-align: center;
+  margin: 0;
+  width: 58%;
+}
+
+.file-list > button {
+  width: 45%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-div {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.product-img {
+  border: none;
+}
+
+.product-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.x-btn {
+  padding: 0rem 1.2rem;
+  background-color: black;
+  color: white;
+  position: absolute;
+  border-radius: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  right: -10px;
+  top: -10px;
+  border: none;
+}
+
+.edit-btn-tienda {
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 3.5rem;
+  border-radius: 50px;
+  padding: .5rem;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.cancel-btn {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: .5rem;
+  border-radius: 50px;
+  border: none;
+  color: var(--white);
+  transition: all 200ms;
+  width: 15rem;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 180px;
+  left: 25px;
+  background-color: var(--red);
+}
+
+.cancel-btn:hover {
+  background-color: var(--darkred);
+  cursor: pointer;
+}
+
+.current-slider {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 2rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.current-slider-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+    
+  .section-slider-edit {
+    padding: 1rem 0;
+  }
+  
+  .article-slider-edit {
+    width: 50%;
+    padding: 4rem 3rem;
+  }
+  
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    
+  .section-slider-edit {
+    padding: 1rem 0;
+  }
+  
+  .article-slider-edit {
+    width: 70%;
+    padding: 4rem 2rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+    
+  .section-slider-edit {
+    padding: 8rem 0;
+  }
+  
+  .article-slider-edit {
+    width: 80%;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+    .section-slider-edit {
+    padding: 0;
+  }
+  
+  .article-slider-edit {
+    width: 100%;
+    padding: 10rem 1rem;
+    margin: 0;
+    border: none;
+    border-radius: 0%;
+    backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.7);
+  }
+}

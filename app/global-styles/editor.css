@@ -1,0 +1,1061 @@
+/* Animaciones */
+@keyframes bg-color-change {
+	0% {
+		background-color: rgb(63, 63, 63);
+	}
+	10% {
+		background-color: rgb(78, 0, 0);
+	}
+	20% {
+		background-color: rgb(100, 107, 0);
+	}
+	30% {
+		background-color: rgb(35, 110, 0);
+	}
+	40% {
+		background-color: rgb(1, 105, 91);
+	}
+	50% {
+		background-color: rgb(1, 72, 105);
+	}
+	60% {
+		background-color: rgb(0, 2, 99);
+	}
+	70% {
+		background-color: rgb(42, 0, 97);
+	}
+	80% {
+		background-color: rgb(88, 0, 44);
+	}
+	90% {
+		background-color: rgb(83, 0, 0);
+	}
+	100% {
+		background-color: rgb(56, 56, 56);
+	}
+}
+
+@keyframes shadow-rotate {
+	0%,
+	100% {
+		box-shadow: 0px 0px 30px 15px rgb(255, 255, 255);
+	}
+	10% {
+		box-shadow: 0px 0px 30px 15px rgb(255, 0, 0);
+	}
+	20% {
+		box-shadow: 0px 0px 30px 15px rgb(213, 228, 0);
+	}
+	30% {
+		box-shadow: 0px 0px 30px 15px rgb(81, 255, 0);
+	}
+	40% {
+		box-shadow: 0px 0px 30px 15px rgb(0, 255, 221);
+	}
+	50% {
+		box-shadow: 0px 0px 30px 15px rgb(0, 174, 255);
+	}
+	60% {
+		box-shadow: 0px 0px 30px 15px rgb(173, 174, 255);
+	}
+	70% {
+		box-shadow: 0px 0px 30px 15px rgb(205, 167, 255);
+	}
+	80% {
+		box-shadow: 0px 0px 30px 15px rgb(255, 0, 128);
+	}
+	90% {
+		box-shadow: 0px 0px 30px 15px rgb(255, 80, 80);
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.main-container-editor {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	animation: bg-color-change 20s infinite linear;
+}
+
+.main-section-editor {
+	width: 85%;
+	padding: 7rem 0rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title-and-logo-div-editor {
+	gap: 1rem;
+	margin-bottom: 8rem;
+	width: auto;
+	padding: 2rem 3rem;
+	border-radius: 85px;
+	display: flex;
+	background-color: rgb(245, 245, 245);
+	animation: shadow-rotate 20s infinite linear;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.logo-editor {
+	width: 10rem;
+	height: auto;
+}
+
+.current-imgs-container-editor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	gap: 7rem;
+	padding: 0;
+	margin-bottom: 8rem;
+	border-radius: 15px;
+}
+
+.current-img-div-editor {
+	position: relative;
+	width: 600px;
+	height: auto;
+}
+
+.img-editor {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 10px var(--white);
+}
+
+/* Vista previa de archivos listos para subir */
+.form-editor {
+	box-shadow: 0 0 20px 10px var(--white);
+	border: none;
+	border-radius: 10px;
+	background-color: white;
+	padding: 5rem 2rem 5rem 2rem;
+	width: 70%;
+}
+
+.btn-and-file-list-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 0;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.paragraph {
+	color: var(--blue);
+	background-color: rgb(236, 247, 254);
+}
+
+.file-preview-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	gap: 2rem;
+	padding: 5rem 3rem;
+	margin-top: 2rem;
+	border-radius: 15px;
+	width: 100%;
+}
+
+.file-preview-imgs-div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 7rem;
+	width: 100%;
+}
+
+.file-preview-img-div {
+	position: relative;
+	width: 29%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 10px var(--blue);
+}
+
+.file-preview-img {
+	border-radius: 15px;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1.5/1;
+	background-color: white;
+}
+
+.selected-file-list {
+	list-style: none;
+	text-align: center;
+	color: var(--blue);
+}
+
+.selected-file-list-div {
+	border-radius: 15px;
+	padding: 2rem 0 1rem 0;
+}
+/* Fin de estilos vista previa de archivos */
+
+.error-div {
+	width: 40%;
+}
+
+.x-btn {
+	padding: 0rem 1.5rem 0.2rem 1.5rem;
+	background-color: black;
+	color: white;
+	position: absolute;
+	border-radius: 50px;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	right: -22px;
+	top: -18px;
+	border: none;
+	box-shadow: 0 0 20px 10px var(--white);
+	transition: all 200ms ease-in-out;
+}
+
+.x-btn:hover {
+	background-color: var(--red);
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.edit-btn {
+	color: var(--white);
+	background-color: var(--black);
+	width: 4.5rem;
+	border-radius: 50px;
+	padding: 0.5rem;
+	position: absolute;
+	top: -18px;
+	left: -22px;
+	box-shadow: 0 0 20px 10px var(--white);
+	transition: all 200ms ease-in-out;
+}
+
+.edit-btn:hover {
+	background-color: var(--darkgreen);
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.cancel-btn {
+	font-size: 2.4rem;
+	font-weight: bold;
+	padding: 2rem;
+	border-radius: 10px;
+	border: solid 2px var(--white);
+	color: var(--white);
+	transition: all 200ms;
+	width: 29rem;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--red);
+	box-shadow: 0 0 40px 40px var(--black);
+}
+
+.cancel-btn:hover {
+	background-color: var(--darkred);
+	cursor: pointer;
+}
+
+.error-editor {
+	box-shadow: 0 0 20px 10px var(--white);
+}
+
+/* Solo para el editor de Nosotros */
+.current-img-div-editor-nos {
+	position: relative;
+	width: 30%;
+	height: auto;
+}
+
+/* Solo para el editor de Tienda */
+.product-div-editor {
+	flex: 0 0 22%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--white);
+	border-radius: 15px;
+	box-shadow: 0 0 20px 10px var(--white);
+	padding: 2rem;
+}
+
+.img-product-editor {
+	width: 80%;
+	height: auto;
+}
+
+.text-div-product-editor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 2rem;
+	min-height: 270px;
+}
+
+.buttons-div-product-editor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 100%;
+}
+
+/* Solo para el editor de Proximamente */
+.product-div-prox-editor {
+	flex: 0 0 22%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--white);
+	border-radius: 15px;
+	box-shadow: 0 0 20px 10px var(--white);
+	padding: 2rem;
+}
+
+.release-date-div {
+	color: var(--blue);
+	background-color: rgb(236, 247, 254);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+
+.text-div-prox-editor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	min-height: 270px;
+}
+
+/* Solo para el editor de FAQs */
+.faq-div-editor {
+	min-height: 700px;
+	padding-top: 5rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.main-section-editor {
+		width: 90%;
+		padding: 5rem 0rem;
+	}
+
+	.title-and-logo-div-editor {
+		gap: 1rem;
+		margin-bottom: 6rem;
+		padding: 1.7rem 2.7rem;
+	}
+
+	.logo-editor {
+		width: 7rem;
+	}
+
+	.current-imgs-container-editor {
+		gap: 6rem;
+	}
+
+	.current-img-div-editor {
+		width: 30%;
+	}
+
+	/* Vista previa de archivos listos para subir */
+	.form-editor {
+		box-shadow: 0 0 20px 10px var(--white);
+		border: none;
+		padding: 3rem 1.5rem 2rem 1.5rem;
+		width: 70%;
+	}
+
+	.btn-and-file-list-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		padding: 0;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.file-preview-container {
+		padding: 2rem 0 5rem 0;
+		gap: 1rem;
+	}
+
+	.file-preview-imgs-div {
+		gap: 5rem;
+	}
+
+	.file-preview-img-div {
+		width: 27%;
+	}
+	/* Fin de estilos vista previa de archivos */
+
+	.error-div {
+		width: 30%;
+	}
+
+	.x-btn {
+		font-size: 2rem;
+		padding: 0rem 1rem 0.2rem 1rem;
+		right: -14px;
+		top: -14px;
+	}
+
+	.edit-btn {
+		width: 3.1rem;
+		top: -14px;
+		left: -14px;
+	}
+
+	.cancel-btn {
+		font-size: 1.8rem;
+		padding: 1rem;
+		width: 22rem;
+		left: 22%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.error-editor {
+		box-shadow: 0 0 20px 10px var(--white);
+	}
+
+	/* Solo para el editor de Nosotros */
+	.current-img-div-editor-nos {
+		position: relative;
+		width: 30%;
+		height: auto;
+	}
+
+	/* Solo para el editor de Tienda */
+	.product-div-editor {
+		flex: 0 0 20%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--white);
+		border-radius: 15px;
+		box-shadow: 0 0 20px 10px var(--white);
+		padding: 2rem;
+	}
+
+	.img-product-editor {
+		width: 80%;
+		height: auto;
+	}
+
+	.text-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 2rem;
+		min-height: 170px;
+	}
+
+	.buttons-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	/* Solo para el editor de Proximamente */
+	.product-div-prox-editor {
+		flex: 0 0 30%;
+		box-shadow: 0 0 20px 10px var(--white);
+		border-radius: 15px;
+		padding: 2rem;
+	}
+
+	.release-date-div {
+		padding: 1rem 2rem;
+		border-radius: 10px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-div-prox-editor {
+		min-height: 270px;
+	}
+
+	/* Solo para el editor de FAQs */
+.faq-div-editor {
+	min-height: 470px;
+	padding-top: 5rem;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.main-section-editor {
+		width: 95%;
+		padding: 3rem 0rem;
+	}
+
+	.title-and-logo-div-editor {
+		gap: 1rem;
+		padding: 1.3rem 2rem;
+		margin-bottom: 4rem;
+		border-radius: 100px;
+	}
+
+	.logo-editor {
+		width: 5.5rem;
+	}
+
+	.current-imgs-container-editor {
+		gap: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	.current-img-div-editor {
+		width: 30%;
+	}
+
+	.img-editor {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 0 15px 5px var(--white);
+	}
+
+	/* Vista previa de archivos listos para subir */
+	.form-editor {
+		box-shadow: 0 0 20px 5px var(--white);
+		border: none;
+		padding: 3rem 1rem 3rem 1rem;
+		width: 70%;
+	}
+
+	.btn-and-file-list-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.file-preview-container {
+		padding: 2rem 0 5rem 0;
+		gap: 1rem;
+	}
+
+	.file-preview-imgs-div {
+		gap: 4rem;
+	}
+
+	.file-preview-img-div {
+		width: 28%;
+		box-shadow: 0 0 15px 10px var(--blue);
+	}
+	/* Fin de estilos vista previa de archivos */
+
+	.error-div {
+		width: 40%;
+	}
+
+	.x-btn {
+		font-size: 1.6rem;
+		padding: 0rem 0.9rem 0.3rem 0.9rem;
+		right: -14px;
+		top: -14px;
+		box-shadow: 0 0 15px 5px var(--white);
+	}
+
+	.edit-btn {
+		width: 2.7rem;
+		top: -14px;
+		left: -14px;
+		box-shadow: 0 0 15px 5px var(--white);
+	}
+
+	.cancel-btn {
+		font-size: 1.6rem;
+		padding: 1rem;
+		border-radius: 5px;
+		width: 16rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		box-shadow: 0 0 40px 20px var(--black);
+	}
+
+	.error-editor {
+		box-shadow: 0 0 20px 10px var(--white);
+	}
+
+	/* Solo para el editor de Nosotros */
+	.current-img-div-editor-nos {
+		position: relative;
+		width: 30%;
+		height: auto;
+	}
+
+	/* Solo para el editor de Tienda */
+	.product-div-editor {
+		flex: 0 0 28%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--white);
+		border-radius: 10px;
+		box-shadow: 0 0 20px 5px var(--white);
+		padding: 2rem;
+	}
+
+	.img-product-editor {
+		width: 80%;
+		height: auto;
+	}
+
+	.text-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 2rem;
+		min-height: 160px;
+	}
+
+	.buttons-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	/* Solo para el editor de Proximamente */
+	.product-div-prox-editor {
+		flex: 0 0 45%;
+		box-shadow: 0 0 20px 5px var(--white);
+		border-radius: 10px;
+		padding: 2rem;
+	}
+
+	.release-date-div {
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-div-prox-editor {
+		min-height: 270px;
+	}
+
+		/* Solo para el editor de FAQs */
+.faq-div-editor {
+	min-height: 450px;
+	padding-top: 4rem;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.main-section-editor {
+		width: 95%;
+		padding: 3rem 0rem;
+	}
+
+	.title-and-logo-div-editor {
+		gap: 1rem;
+		padding: 1rem 1.5rem;
+		margin-bottom: 3.5rem;
+		border-radius: 100px;
+	}
+
+	.logo-editor {
+		width: 5rem;
+	}
+
+	.current-imgs-container-editor {
+		gap: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	.current-img-div-editor {
+		width: 45%;
+	}
+
+	.img-editor {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 0 15px 5px var(--white);
+	}
+
+	/* Vista previa de archivos listos para subir */
+	.form-editor {
+		box-shadow: 0 0 20px 5px var(--white);
+		border: none;
+		padding: 3rem 1rem 3rem 1rem;
+		width: 95%;
+		border-radius: 5px;
+	}
+
+	.btn-and-file-list-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.file-preview-container {
+		padding: 2rem 0 3rem 0;
+		margin-top: 0;
+		gap: 1rem;
+	}
+
+	.file-preview-imgs-div {
+		gap: 4rem;
+	}
+
+	.file-preview-img-div {
+		width: 28%;
+		box-shadow: 0 0 15px 10px var(--blue);
+	}
+	/* Fin de estilos vista previa de archivpos */
+
+	.error-div {
+		width: 45%;
+	}
+
+	.x-btn {
+		font-size: 1.6rem;
+		padding: 0rem 0.9rem 0.3rem 0.9rem;
+		right: -10px;
+		top: -10px;
+		box-shadow: 0 0 15px 5px var(--white);
+	}
+
+	.edit-btn {
+		width: 2.7rem;
+		top: -10px;
+		left: -10px;
+		box-shadow: 0 0 15px 5px var(--white);
+	}
+
+	.cancel-btn {
+		font-size: 1.6rem;
+		padding: 1rem;
+		border-radius: 5px;
+		width: 16rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		box-shadow: 0 0 40px 20px var(--black);
+	}
+
+	.error-editor {
+		box-shadow: 0 0 20px 10px var(--white);
+	}
+
+	/* Solo para el editor de Nosotros */
+	.current-img-div-editor-nos {
+		position: relative;
+		width: 30%;
+		height: auto;
+	}
+
+	/* Solo para el editor de Tienda */
+	.product-div-editor {
+		flex: 0 0 35%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--white);
+		border-radius: 5px;
+		box-shadow: 0 0 20px 5px var(--white);
+		padding: 2rem;
+	}
+
+	.img-product-editor {
+		width: 80%;
+		height: auto;
+	}
+
+	.text-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 2rem;
+		min-height: 150px;
+	}
+
+	.buttons-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		width: 100%;
+	}
+
+	/* Solo para el editor de Proximamente */
+	.product-div-prox-editor {
+		flex: 0 0 45%;
+		box-shadow: 0 0 20px 5px var(--white);
+		border-radius: 10px;
+		padding: 2rem;
+	}
+
+	.release-date-div {
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-div-prox-editor {
+		min-height: 270px;
+	}
+
+			/* Solo para el editor de FAQs */
+.faq-div-editor {
+	min-height: 430px;
+	padding-top: 3rem;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.main-section-editor {
+		width: 100%;
+		padding: 2rem 1rem;
+	}
+
+	.title-and-logo-div-editor {
+		gap: 1rem;
+		padding: 1rem 2rem;
+		margin-bottom: 3rem;
+		border-radius: 5px;
+	}
+
+	.logo-editor {
+		width: 5rem;
+	}
+
+	.current-imgs-container-editor {
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.current-img-div-editor {
+		width: 95%;
+	}
+
+	.img-editor {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+		box-shadow: 0 0 10px 3px var(--white);
+	}
+
+	/* Vista previa de archivos listos para subir */
+	.form-editor {
+		box-shadow: 0 0 10px 3px var(--white);
+		border: none;
+		padding: 2rem 0.5rem 2rem 0.5rem;
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	.btn-and-file-list-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.file-preview-container {
+		padding: 2rem 0 1rem 0;
+		margin-top: 0;
+		gap: 0rem;
+	}
+
+	.file-preview-imgs-div {
+		gap: 2rem;
+	}
+
+	.file-preview-img-div {
+		width: 95%;
+		box-shadow: 0 0 10px 3px var(--blue);
+	}
+	/* Fin de estilos vista previa de archivos */
+
+	.error-div {
+		width: 100%;
+	}
+
+	.x-btn {
+		font-size: 1.6rem;
+		padding: 0rem 0.9rem 0.3rem 0.9rem;
+		right: -10px;
+		top: -10px;
+		box-shadow: 0 0 10px 3px var(--white);
+	}
+
+	.edit-btn {
+		width: 2.7rem;
+		top: -10px;
+		left: -10px;
+		box-shadow: 0 0 10px 3px var(--white);
+	}
+
+	.cancel-btn {
+		font-size: 1.4rem;
+		padding: 0.7rem;
+		border-radius: 5px;
+		width: 15rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		box-shadow: 0 0 40px 20px var(--black);
+	}
+
+	.error-editor {
+		box-shadow: 0 0 20px 10px var(--white);
+		width: 100%;
+	}
+
+	/* Solo para el editor de Nosotros */
+	.current-img-div-editor-nos {
+		position: relative;
+		width: 30%;
+		height: auto;
+	}
+
+	/* Solo para el editor de Tienda */
+	.product-div-editor {
+		flex: 0 0 97%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--white);
+		border-radius: 5px;
+		box-shadow: 0 0 10px 3px var(--white);
+		padding: 2rem;
+	}
+
+	.img-product-editor {
+		width: 80%;
+		height: auto;
+	}
+
+	.text-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 2rem;
+		min-height: 140px;
+	}
+
+	.buttons-div-product-editor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		width: 100%;
+	}
+
+	/* Solo para el editor de Proximamente */
+	.product-div-prox-editor {
+		flex: 0 0 100%;
+		box-shadow: 0 0 10px 3px var(--white);
+		border-radius: 5px;
+		padding: 1rem;
+	}
+
+	.release-date-div {
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-div-prox-editor {
+		min-height: 270px;
+	}
+
+				/* Solo para el editor de FAQs */
+.faq-div-editor {
+	min-height: 0;
+	height: auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+}

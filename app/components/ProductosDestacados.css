@@ -1,0 +1,189 @@
+
+.PD-container {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 4rem;
+	padding: 4rem 0 10rem 0;
+}
+
+/* TIENDA SIN PRODUCTOS */
+.PD-container-empty {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-image: url("/img/bubbles-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 7rem;
+}
+
+.H1 {
+	width: 25%;
+	text-align: center;
+	margin: auto 0;
+	padding: 8rem 1rem;
+	border-radius: 50%;
+	box-shadow: 0 0 10px white;
+	font-weight: bold;
+	color: #4bbdff;
+	background: linear-gradient(to right, lightgray, white);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.PD-container {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 4rem;
+		padding: 3rem 0 7rem 0;
+	}
+	
+	/* TIENDA SIN PRODUCTOS */
+	.PD-container-empty {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-image: url("/img/bubbles-bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: scroll;
+		padding: 7rem;
+	}
+	
+	.H1 {
+		width: 25%;
+		text-align: center;
+		margin: auto 0;
+		padding: 8rem 1rem;
+		border-radius: 50%;
+		box-shadow: 0 0 10px white;
+		font-weight: bold;
+		color: #4bbdff;
+		background: linear-gradient(to right, lightgray, white);
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.PD-container {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 4rem;
+		padding: 3rem 0 5rem 0;
+	}
+	
+	/* TIENDA SIN PRODUCTOS */
+	.PD-container-empty {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-image: url("/img/bubbles-bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: scroll;
+		padding: 7rem;
+	}
+	
+	.H1 {
+		width: 25%;
+		text-align: center;
+		margin: auto 0;
+		padding: 8rem 1rem;
+		border-radius: 50%;
+		box-shadow: 0 0 10px white;
+		font-weight: bold;
+		color: #4bbdff;
+		background: linear-gradient(to right, lightgray, white);
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.PD-container {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 4rem;
+		padding: 2rem 0 4rem 0;
+	}
+	
+	/* TIENDA SIN PRODUCTOS */
+	.PD-container-empty {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-image: url("/img/bubbles-bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: scroll;
+		padding: 7rem;
+	}
+	
+	.H1 {
+		width: 25%;
+		text-align: center;
+		margin: auto 0;
+		padding: 8rem 1rem;
+		border-radius: 50%;
+		box-shadow: 0 0 10px white;
+		font-weight: bold;
+		color: #4bbdff;
+		background: linear-gradient(to right, lightgray, white);
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.PD-container {
+		min-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		padding: 2rem 0rem;
+	}
+	
+	/* TIENDA SIN PRODUCTOS */
+	.PD-container-empty {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-image: url("/img/bubbles-bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: scroll;
+		padding: 7rem;
+	}
+}

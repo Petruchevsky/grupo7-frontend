@@ -1,0 +1,248 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.prox-container {
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 7rem;
+}
+
+.items-container {
+	display: flex;
+	flex-direction: column;
+	gap: 7rem;
+	padding-top: 5rem;
+}
+
+.itemDiv {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	padding: 5rem 0;
+	justify-content: space-between;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0 0 30px var(--blue);
+}
+
+.itemDiv > img {
+	width: 30%;
+	height: auto;
+	border-radius: 15px 0 0 15px;
+}
+
+.textoDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	padding-right: 12rem;
+}
+
+/* PAGINA SIN CONTENIDO DESDE STRAPI */
+.container2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: linear-gradient(
+		to right,
+		black,
+		black,
+		rgb(7, 38, 104),
+		rgb(57, 116, 204),
+		lightgray,
+		white
+	);
+	padding: 4rem 2rem;
+	gap: 3rem;
+	border-radius: 10px;
+	margin-top: 3rem;
+	box-shadow: 0 0 10px lightgray;
+}
+
+.container2 img {
+	width: 30%;
+	height: auto;
+	box-shadow: 0 0 20px white;
+	border-radius: 50%;
+}
+
+.container2 h1 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	line-height: 5rem;
+	margin: auto 0;
+	width: 30%;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	prox-container {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 7rem;
+	}
+
+	.items-container {
+		gap: 5rem;
+	}
+
+	.itemDiv {
+		gap: 3rem;
+		padding: 5rem 0 3rem 3rem;
+	}
+
+	.itemDiv > img {
+		width: 25rem;
+		height: auto;
+	}
+
+	.textoDiv {
+		width: 75%;
+		padding-right: 10rem;
+	}
+
+	/* PAGINA SIN CONTENIDO DESDE STRAPI */
+	.container2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background: linear-gradient(
+			to right,
+			black,
+			black,
+			#072668,
+			rgb(57, 116, 204),
+			lightgray,
+			white
+		);
+		padding: 4rem 2rem;
+		gap: 3rem;
+		border-radius: 10px;
+		margin-top: 3rem;
+		box-shadow: 0 0 10px lightgray;
+	}
+
+	.container2 img {
+		width: 30%;
+		height: auto;
+		box-shadow: 0 0 20px white;
+		border-radius: 50%;
+	}
+
+	.container2 h1 {
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		line-height: 5rem;
+		margin: auto 0;
+		width: 30%;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.prox-container {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.items-container {
+		width: 100%;
+		padding: 5rem;
+		gap: 5rem;
+	}
+
+	.itemDiv {
+		gap: 3rem;
+		padding: 5rem 4rem 3rem 3rem;
+	}
+
+	.itemDiv > img {
+		width: 25rem;
+		height: auto;
+	}
+
+	.textoDiv {
+		width: 75%;
+		padding-right: 5rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 601px) {
+	.prox-container {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.items-container {
+		width: 100%;
+		padding: 5rem;
+		gap: 2rem;
+	}
+
+	.itemDiv {
+		gap: 1rem;
+		padding: 3rem 5rem 1rem 0;
+	}
+
+	.itemDiv > img {
+		width: 150px;
+		height: 180px;
+		margin: auto 0;
+	}
+
+	.textoDiv {
+		width: auto;
+		padding-right: 0;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 600px) {
+	.prox-container {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.items-container {
+		width: 100%;
+		margin: 2rem 0;
+		padding: 0;
+		gap: 2rem;
+	}
+
+	.itemDiv {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0rem;
+		padding: 3rem 0 1rem 0;
+		border-radius: 0;
+	}
+
+	.itemDiv > img {
+		width: 150px;
+		height: 150px;
+		margin: auto 0;
+	}
+
+	.textoDiv {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		padding: 2rem 2rem 1rem 2rem;
+	}
+}
