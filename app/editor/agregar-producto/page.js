@@ -29,12 +29,16 @@ function AgregarProducto() {
 
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`);
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+			credentials: "include" 
+		});
 
 		if (!res.ok) {
 			router.push("/acceso-denegado");
 		}
 	};
+
 	useEffect(()=>{
 		sessionType();
 	} ,[]);
@@ -86,6 +90,7 @@ function AgregarProducto() {
 				`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/productos`,
 				{
 					method: "POST",
+					credentials: "include",
 					body: formData,
 				}
 			);
@@ -173,7 +178,7 @@ function AgregarProducto() {
 					>
 						<div className="checkbox-cont">
 							<label htmlFor="stock" className="checkbox-label">
-								¿Producto en Disponible?
+								¿Producto Disponible?
 							</label>
 							<div
 								className={

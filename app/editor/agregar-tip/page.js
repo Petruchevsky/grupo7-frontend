@@ -29,12 +29,16 @@ function AgregarTip() {
 
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`);
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+			credentials: "include" 
+		});
 
 		if (!res.ok) {
 			router.push("/acceso-denegado");
 		}
 	};
+
 	useEffect(()=>{
 		sessionType();
 	} ,[]);
@@ -79,6 +83,7 @@ function AgregarTip() {
 				`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/tips`,
 				{
 					method: "POST",
+					credentials: "include",
 					body: formData,
 				}
 			);
@@ -95,7 +100,7 @@ function AgregarTip() {
 			setCreatedBy("");
 			setImages(null);
 			setSlug("");
-			fileInputRef.current.value = "";
+			inputFileRef.current.value = "";
 			setTimeout(() => {
 				setGreenToast("");
 			}, 4000);

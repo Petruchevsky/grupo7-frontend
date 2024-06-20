@@ -9,6 +9,8 @@ import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { IoMdMailUnread } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
+import { GrStatusGood } from "react-icons/gr";
+import { Spinner } from "react-bootstrap";
 
 function FormContact() {
 	const [name, setName] = useState("");
@@ -17,9 +19,11 @@ function FormContact() {
 	const [message, setMessage] = useState("");
 	const [errorMsg, setErrorMsg] = useState("");
 	const [successMsg, setSuccessMsg] = useState("");
+	const [greenToastSpinner, setGreenToastSpinner] = useState("");
 
 	const handleSubmit = async (e) => {
-		setSuccessMsg("Estamos enviando tu mensaje...");
+		setSuccessMsg("Estamos enviando tu mensaje");
+		setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size" />);
 
 		e.preventDefault();
 		setErrorMsg("");
@@ -27,7 +31,7 @@ function FormContact() {
 		const data = { name, email, subject, message };
 
 		try {
-			const res = await fetch("/api/mailer", {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/mailer`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -36,10 +40,13 @@ function FormContact() {
 			});
 
 			if (!res.ok) {
+				setSuccessMsg("");
+				setGreenToastSpinner("");
 				throw new Error("Algo salió Mal con tu Email");
 			}
 
 			setSuccessMsg("Mensaje Enviado Exitosamente!");
+			setGreenToastSpinner(<GrStatusGood className="svg"/>);
 
 			setTimeout(() => {
 				setName("");
@@ -47,6 +54,7 @@ function FormContact() {
 				setSubject("");
 				setMessage("");
 				setSuccessMsg("Te responderemos lo antes posible!");
+				setGreenToastSpinner(<GrStatusGood className="svg"/>);
 			}, 2000);
 		} catch (error) {
 			setErrorMsg(error.message);
@@ -106,13 +114,15 @@ function FormContact() {
 						/>
 					</Slide>
 					<Slide className="w-100 text-l">
-						<button className="link-button m-auto border-0" type="submit">
-							<LiaTelegramPlane />
-							Enviar Mensaje
-						</button>
+						<div className="button-container">
+							<button className="link-button m-auto border-0" type="submit">
+								<LiaTelegramPlane />
+								Enviar Mensaje
+							</button>
+						</div>
 					</Slide>
 
-					{successMsg && <p className="success">{successMsg}</p>}
+					{successMsg && <p className="success">{successMsg}{greenToastSpinner}</p>}
 					{errorMsg && <p className="error">{errorMsg}</p>}
 				</form>
 			</setcion>

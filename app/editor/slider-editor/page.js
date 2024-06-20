@@ -37,7 +37,9 @@ function SliderEditor() {
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
 		const res = await fetch(
-			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+				credentials: "include",
+			}
 		);
 
 		if (!res.ok) {
@@ -55,7 +57,10 @@ function SliderEditor() {
 			setToastSpinner(
 				<Spinner animation="grow" className="spinner-grow-size" />
 			);
-			const res = await fetch("/api/slider");
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/slider`, {
+				credentials: "include",
+			});
+
 			if (!res.ok) {
 				errorHandler(res.status);
 				setToast("Error al cargar los archivos, por favor reinicia la página");
@@ -91,8 +96,9 @@ function SliderEditor() {
 			setToastSpinner(
 				<Spinner animation="grow" className="spinner-grow-size" />
 			);
-			const res = await fetch(`/api/slider`, {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/slider`, {
 				method: "DELETE",
+				credentials: "include",
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -167,8 +173,9 @@ function SliderEditor() {
 				setToastSpinner(
 					<Spinner animation="grow" className="spinner-grow-size" />
 				);
-				const res = await fetch("/api/slider", {
+				const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/slider`, {
 					method: "POST",
+					credentials: "include",
 					body: formData,
 				});
 

@@ -26,12 +26,16 @@ function FaqsEditor() {
 
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`);
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+			credentials: "include" 
+		});
 
 		if (!res.ok) {
 			router.push("/acceso-denegado");
 		}
 	};
+
 	useEffect(()=>{
 		sessionType();
 	} ,[]);
@@ -51,7 +55,9 @@ function FaqsEditor() {
 			setGreenToastSpinner(
 				<Spinner animation="grow" className="spinner-grow-size" />
 			);
-			const res = await fetch("/api/preguntas-frecuentes");
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/preguntas-frecuentes`, {
+				credentials: "include",
+			});
 
 			if (!res.ok) {
 				const errorData = await res.json();
@@ -105,6 +111,7 @@ function FaqsEditor() {
 			);
 			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/preguntas-frecuentes`, {
 				method: "DELETE",
+				credentials: "include",
 				headers: {
 					"Content-Type": "application/json",
 				},

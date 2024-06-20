@@ -32,8 +32,9 @@ function IniciarSesionComponente() {
 		};
 
 		try {
-			const res = await fetch(`/api/auth/login`, {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/login`, {
 				method: "POST",
+				credentials: "include",
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -77,6 +78,7 @@ function IniciarSesionComponente() {
 				`${process.env.NEXT_PUBLIC_APIURL}/api/auth/forgot-password`,
 				{
 					method: "POST",
+					credentials: "include",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify(data),
 				}

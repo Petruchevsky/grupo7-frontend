@@ -50,12 +50,13 @@ function RegistrarseComponente() {
 		}
 
 		try {
-			setGreenToast("Espera un segundo, te estamos registrando...");
+			setGreenToast("Espera un segundo, te estamos registrando");
 			setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size"/>);
 			const res = await fetch(
 				`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/register`,
 				{
 					method: "POST",
+					credentials: "include",
 					headers: {
 						"Content-Type": "application/json",
 					},

@@ -27,12 +27,16 @@ function AgregarProximamente() {
 
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`);
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+			credentials: "include" 
+		});
 
 		if (!res.ok) {
 			router.push("/acceso-denegado");
 		}
 	};
+
 	useEffect(()=>{
 		sessionType();
 	} ,[]);
@@ -42,7 +46,7 @@ function AgregarProximamente() {
 		setRedToast("");
 		setRedToastSpinner("");
 		setGreenToast("Estamos subiendo tu nuevo producto");
-		setGreenToastSpinner(<Spinner animation="border" variant="success" />);
+		setGreenToastSpinner(<Spinner animation="grow" className="grow-spinner-size" />);
 		event.preventDefault();
 
 		const formData = new FormData();
@@ -63,6 +67,7 @@ function AgregarProximamente() {
 				`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/proximamente`,
 				{
 					method: "POST",
+					credentials: "include",
 					body: formData,
 				}
 			);
@@ -80,11 +85,16 @@ function AgregarProximamente() {
 			setReleaseDate("");
 			setImages(null);
 			setImages(null);
-			fileInputRef.current.value = "";
+
+			if (inputFileRef.current) {
+				inputFileRef.current.value = "";
+			}
+
 			setTimeout(() => {
 				setGreenToast("");
 				setGreenToastSpinner("");
 			}, 4000);
+			
 		} catch (error) {
 			setGreenToast("");
 			setGreenToastSpinner("");

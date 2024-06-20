@@ -36,13 +36,17 @@ function NosotrosEditor() {
 
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`);
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+			credentials: "include" 
+		});
 
 		if (!res.ok) {
 			router.push("/acceso-denegado");
 		}
 	};
-		useEffect(()=>{
+
+	useEffect(()=>{
 		sessionType();
 	} ,[]);
 
@@ -59,7 +63,10 @@ function NosotrosEditor() {
 			setRedToastSpinner("");
 			setGreenToast("Cargando imágenes y textos...");
 			setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size" />);
-			const res = await fetch("/api/nosotros");
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`, {
+				credentials: "include",
+			});
+
 			if (!res.ok) {
 				setGreenToast("");
 				setGreenToastSpinner("");
@@ -113,8 +120,9 @@ function NosotrosEditor() {
 		try {
 			setGreenToast("Eliminando imagen");
 			setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size" />);
-			const res = await fetch(`/api/nosotros`, {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`, {
 				method: "DELETE",
+				credentials: "include",
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -229,8 +237,9 @@ function NosotrosEditor() {
 				try {
 					setGreenToast("Subiendo imagen(es)");
 					setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size" />);
-					const res = await fetch("/api/nosotros", {
+					const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`, {
 						method: "POST",
+						credentials: "include",
 						body: formData,
 					});
 
@@ -257,8 +266,9 @@ function NosotrosEditor() {
 				const formData = new FormData();
 				formData.append("description", description);
 
-				const res = await fetch("/api/nosotros", {
+				const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`, {
 					method: "POST",
+					credentials: "include",
 					body: formData,
 				});
 				if (!res.ok) {
@@ -312,8 +322,9 @@ function NosotrosEditor() {
 			try {
 				setGreenToast("Reemplazando imagen");
 				setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size" />);
-				const res = await fetch("/api/nosotros", {
+				const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`, {
 					method: "PUT",
+					credentials: "include",
 					body: formData,
 				});
 

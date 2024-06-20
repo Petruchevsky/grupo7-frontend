@@ -33,12 +33,16 @@ function TipsEditor() {
 
 	// CHECK IF USER IS ADMIN OR JUST LOGGED USER____________________________________
 	const sessionType = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`);
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
+			credentials: "include" 
+		});
 
 		if (!res.ok) {
 			router.push("/acceso-denegado");
 		}
 	};
+
 	useEffect(()=>{
 		sessionType();
 	} ,[]);
@@ -56,7 +60,10 @@ function TipsEditor() {
 			setRedToastSpinner("");
 			setGreenToast("Cargando todos los tips");
 			setGreenToastSpinner(<Spinner animation="grow" className="spinner-grow-size" />);
-			const res = await fetch("/api/tips", { cache: "no-store" });
+			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/tips`, { 
+				cache: "no-store",
+				credentials: "include" 
+			});
 
 			if (!res.ok) {
 				const errorData = await res.json();
@@ -118,6 +125,7 @@ function TipsEditor() {
 				`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/tips`,
 				{
 					method: "DELETE",
+					credentials: "include",
 					headers: {
 						"Content-Type": "application/json",
 					},

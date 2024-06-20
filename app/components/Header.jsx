@@ -13,8 +13,9 @@ function Header() {
 	const [greenMsg, setGreenMsg] = useState("");
 
 	const logout = async () => {
-		const res = await fetch("/api/auth/logout", {
+		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/logout`, {
 			method: "POST",
+			credentials: "include",
 			headers: {
 				"Content-Type": "application/json",
 			},
@@ -79,7 +80,7 @@ function Header() {
 								Iniciar Sesión
 							</Link>
 						)}
-						{greenMsg && <p className="green-msg">{greenMsg}</p>}
+						{greenMsg && <p className="green-msg m-auto">{greenMsg}</p>}
 						<AdminButton />
 					</Bounce>
 				</div>

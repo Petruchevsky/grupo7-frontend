@@ -15,6 +15,7 @@ const getTip = async (slug) => {
 			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/obtener-tip`,
 			{
 				method: "POST",
+				credentials: "include",
 				headers: {
 					"Content-Type": "application/json",
 				},
