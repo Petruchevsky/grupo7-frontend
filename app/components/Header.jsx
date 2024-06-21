@@ -14,6 +14,7 @@ function Header() {
 
 	const getCookie = () => {
 		console.log(Cookies.get("loginCookie"));
+		console.log(Cookies.get("adminCookie"));
 	}
 
 	const logout = async () => {
