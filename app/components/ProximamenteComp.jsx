@@ -5,8 +5,6 @@ import { Bounce, Slide } from "react-awesome-reveal";
 
 function ProximamenteComponente({ props }) {
 	const data = props;
-	console.log(data);
-	console.log(data.products);
 
 	return (
 		<main className="prox-container">

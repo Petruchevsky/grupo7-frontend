@@ -12,6 +12,10 @@ import AdminButton from "./AdminButton";
 function Header() {
 	const [greenMsg, setGreenMsg] = useState("");
 
+	const getCookie = () => {
+		console.log(Cookies.get("loginCookie"));
+	}
+
 	const logout = async () => {
 		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/logout`, {
 			method: "POST",
@@ -60,6 +64,9 @@ function Header() {
 
 				<div className="header-button-container">
 					<Bounce className="w-100" cascade>
+					<button className="link-button-danger" onClick={getCookie}>
+								Get Cookie
+							</button>
 						<Link
 							className={
 								Cookies.get("loginCookie") ? "btn-disabled" : "link-button"
