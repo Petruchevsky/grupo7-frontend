@@ -1,10 +1,14 @@
 "use client";
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./Header.css";
 import Link from "next/link";
-import { RiLogoutBoxLine, RiLoginBoxLine, RiRegisteredLine } from "react-icons/ri";
+import {
+	RiLogoutBoxLine,
+	RiLoginBoxLine,
+	RiRegisteredLine,
+} from "react-icons/ri";
 import { Zoom, Bounce } from "react-awesome-reveal";
 import Cookies from "js-cookie";
 import AdminButton from "./AdminButton";
@@ -12,19 +16,26 @@ import AdminButton from "./AdminButton";
 function Header() {
 	const [greenMsg, setGreenMsg] = useState("");
 
+	useEffect(() => {
+		getCookie();
+	}, []);
+
 	const getCookie = () => {
 		console.log(Cookies.get("loginCookie"));
 		console.log(Cookies.get("adminCookie"));
-	}
+	};
 
 	const logout = async () => {
-		const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/logout`, {
-			method: "POST",
-			credentials: "include",
-			headers: {
-				"Content-Type": "application/json",
-			},
-		});
+		const res = await fetch(
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/logout`,
+			{
+				method: "POST",
+				credentials: "include",
+				headers: {
+					"Content-Type": "application/json",
+				},
+			}
+		);
 
 		if (res.ok) {
 			const data = await res.json();
@@ -65,9 +76,6 @@ function Header() {
 
 				<div className="header-button-container">
 					<Bounce className="w-100" cascade>
-					<button className="link-button-danger" onClick={getCookie}>
-								Get Cookie
-							</button>
 						<Link
 							className={
 								Cookies.get("loginCookie") ? "btn-disabled" : "link-button"
