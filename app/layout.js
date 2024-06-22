@@ -4,6 +4,7 @@ import "./global-styles/loading.css";
 import "./global-styles/not-found.css";
 import "./global-styles/editor.css";
 import { Inter } from "next/font/google";
+export const dynamic = "force-dynamic";
 
 const inter = Inter({
 	subsets: ["latin"],
