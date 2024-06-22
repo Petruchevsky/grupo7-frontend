@@ -29,7 +29,6 @@ const getTip = async (slug) => {
 		}
 
 		const { data } = await res.json();
-		console.log(data);
 		return data;
 	} catch (error) {
 		console.log(error);
@@ -40,7 +39,6 @@ async function Tip({ params }) {
 	const { slug } = params;
 
 	const data = await getTip(slug);
-	console.log(data);
 	let { title, description, createdAt, createdBy, images } = data;
 	const date = new Date(createdAt);
 	const options = {

@@ -1,5 +1,14 @@
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./*"]
+//     }
+//   }
+// }
+
 {
   "compilerOptions": {
+    "lib": ["ES6", "DOM"], // Asegura soporte para Promise y tipos del DOM
     "paths": {
       "@/*": ["./*"]
     }

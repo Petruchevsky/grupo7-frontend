@@ -11,7 +11,7 @@ export const metadata = {
 const getProductos = async() => {
 	try {
 		const res = await fetch(
-			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/productos`
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/productos`, { cache: "no-store" }
 		);
 
 		if (!res.ok) {

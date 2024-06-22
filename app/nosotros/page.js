@@ -11,7 +11,7 @@ export const metadata = {
 const getNosotros = async () => {
 	try {
 		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`
+			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/nosotros`, { cache: "no-store" }
 		);
 		if (response.ok) {
 			const { data } = await response.json();

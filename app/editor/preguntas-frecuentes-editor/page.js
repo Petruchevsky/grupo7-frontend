@@ -28,7 +28,8 @@ function FaqsEditor() {
 	const sessionType = async () => {
 		const res = await fetch(
 			`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/auth/check-admin-auth`, {
-			credentials: "include" 
+			credentials: "include",
+			cache: "no-store" 
 		});
 
 		if (!res.ok) {
@@ -57,6 +58,7 @@ function FaqsEditor() {
 			);
 			const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/preguntas-frecuentes`, {
 				credentials: "include",
+				cache: "no-store",
 			});
 
 			if (!res.ok) {

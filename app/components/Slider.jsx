@@ -3,7 +3,7 @@ import SliderComp from "./SliderComp";
 
 const getData = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/slider`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_NEXT_APIURL}/api/slider`, { cache: "no-store" })
     if (!res.ok) {
       throw new Error(res.statusText)
     }
