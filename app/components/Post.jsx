@@ -29,7 +29,7 @@ function Post({ tip }) {
 			</div>
 
 			<div className="text-post-container">
-				<div>
+				<div className="title-created-date">
 					<h1>{title}</h1>
 					<p>Post creado por {createdBy}</p>
 					<p>{formattedDate}</p>

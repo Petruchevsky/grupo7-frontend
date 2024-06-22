@@ -4,7 +4,7 @@
 .tips-container {
    display: flex;
    flex-direction: column;
-   width: 70%;
+   width: 80%;
    margin: 0 auto;
 }
 
@@ -13,56 +13,81 @@
    flex-direction: column;
    gap: 6rem;
    padding: 5rem 0;
+   width: 100%;
 }
 
 /* ---------------------------------------------------------------------------------------------------*/
 /* Estilos para Pantallas Grandes */
 @media (max-width: 2000px) and (min-width: 1440px) {
-	.blog-container {
-      width: 90%;
+	.tips-container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
    }
    
-   .articles-container {
-      gap: 5rem;
+   .posts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
       padding: 5rem 0;
+      width: 100%;
    }
 }
 
 /* ---------------------------------------------------------------------------------------------------*/
 /* Estilos para Laptops */
 @media (max-width: 1439px) and (min-width: 1024px) {
-	.blog-container {
+	.tips-container {
+      display: flex;
+      flex-direction: column;
       width: 90%;
+      margin: 0 auto;
    }
-
-   .articles-container {
-      gap: 5rem;
+   
+   .posts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
       padding: 5rem 0;
+      width: 100%;
    }
 }
 
 /* ---------------------------------------------------------------------------------------------------*/
 /* Estilos para Tablets */
 @media (max-width: 1023px) and (min-width: 601px) {
-	.blog-container {
+	.tips-container {
+      display: flex;
+      flex-direction: column;
       width: 90%;
+      margin: 0 auto;
    }
-
-   .articles-container {
-      gap: 5rem;
+   
+   .posts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       padding: 5rem 0;
+      width: 100%;
    }
 }
 
 /* ---------------------------------------------------------------------------------------------------*/
 /* Estilos para Móviles */
 @media (max-width: 600px) {
-	.blog-container {
+   .tips-container {
+      display: flex;
+      flex-direction: column;
       width: 95%;
+      margin: 0 auto;
    }
-
-   .articles-container {
+   
+   .posts-container {
+      display: flex;
+      flex-direction: column;
       gap: 1rem;
-      padding: 2rem 0;
+      padding: 3.5rem 0;
+      width: 100%;
    }
 }
