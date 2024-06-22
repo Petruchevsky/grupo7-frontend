@@ -75,7 +75,7 @@ function Header() {
 				</div>
 
 				<div className="header-button-container">
-					<Bounce className="w-100" cascade>
+					<Bounce className="w-100 text-center" cascade>
 						<Link
 							className={
 								Cookies.get("loginCookie") ? "btn-disabled" : "link-button"
