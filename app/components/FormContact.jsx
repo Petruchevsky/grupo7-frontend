@@ -1,8 +1,8 @@
 "use client";
+import "./FormContact.css";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import "./FormContact.css";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { Slide, Bounce } from "react-awesome-reveal";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";

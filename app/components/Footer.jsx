@@ -96,7 +96,7 @@ function Footer() {
 			<Zoom className="w-100">
 				<section className="developedBy">
 					<Link href="/">Grupo 7 &copy;</Link>
-					<Link href="/">Diseño y Desarrollo por Moises-WEB</Link>
+					<Link href="https://www.moises-web.cl/">Diseño y Desarrollo por Moises-WEB</Link>
 				</section>
 			</Zoom>
 		</footer>
